@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>MouseLight Demo</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="mouselight.js"></script>
+        <script type="text/javascript">
+                        
+            $(function(){
+                $(".object1").mouselight();
+                $(".object2").mouselight({max: 10});
+            });
+            
+        </script>
+        <style type="text/css">
+            .object1 {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 300px;
+                left: 500px;
+                background-color: blue;
+            }
+            
+            .object2 {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 500px;
+                left: 300px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="object1"></div>
+        <div class="object2"></div>
+    </body>
+</html>
